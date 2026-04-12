@@ -4,59 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina | Güzellik ve Bakım</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">LUMINA</div>
-        <ul class="nav-links">
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#about">Hakkımızda</a></li>
-            <li><a href="#projects">Projelerimiz</a></li>
-            <li><a href="#contact">İletişim</a></li>
-        </ul>
+        <div class="container nav-container">
+            <div class="logo">LUMINA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#projects">Projelerimiz</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-text">
-            <h1>Doğal Işıltını Keşfet</h1>
-            <p>Sadece bitkisel özlerle hazırlanan özel formüller.</p>
+        <div class="hero-content">
+            <h1>Doğadan Gelen Işıltı</h1>
+            <p>Bilimle harmanlanmış saf bitki özleri.</p>
+            <a href="#projects" class="btn btn-primary">Ürünleri Gör</a>
         </div>
     </header>
 
-    <section id="about" class="section about-container">
-        <div class="content">
-            <h2>Hakkımızda</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Lumina olarak, 2026 yılından bu yana cilt bakımında "temiz içerik" felsefesini savunuyoruz. Kimyasal katkı maddelerinden uzak, tamamen sürdürülebilir tarım ürünleriyle cildinize ihtiyacı olan nemi ve canlılığı sunuyoruz.</p>
-                    <p><strong>Vizyonumuz:</strong> Herkesin kendi doğal güzelliğiyle barışık olduğu bir dünya yaratmak.</p>
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hakkımızda</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d52d?auto=format&fit=crop&w=600&q=80" alt="Hakkımızda">
                 </div>
-                <div class="about-stats">
-                    <div class="stat"><span>100%</span> Vegan İçerik</div>
-                    <div class="stat"><span>25+</span> Ürün Çeşidi</div>
-                    <div class="stat"><span>0</span> Hayvan Deneyi</div>
+                <div class="about-text">
+                    <h3>Hikayemiz</h3>
+                    <p>Lumina, 2026 yılında doğaya olan tutkumuz ve temiz içerikli kozmetik hayalimizle kuruldu. Amacımız, cildin doğal dengesini bozmadan ona en saf haliyle destek olmaktır.</p>
+                    
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Sürdürülebilirlik</h4>
+                            <p>Ambalajlarımız %100 geri dönüştürülebilir malzemeden üretilir.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-flask"></i>
+                            <h4>Bilimsel Formül</h4>
+                            <p>Her ürünümüz dermatolojik testlerden geçerek onaylanmıştır.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section bg-light">
-        <h2>Projelerimiz ve Ürünler</h2>
-        <p>Geliştirdiğimiz son teknoloji bakım serileri:</p>
-        <div class="project-grid">
-            <div class="card">
-                <div class="icon">💧</div>
-                <h3>Hyalüronik Seri</h3>
-                <p>Nemi hapseden, dolgunlaştırıcı gece bakım projemiz.</p>
+    <section id="projects" class="section projects bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Öne Çıkan Projeler</h2>
+                <div class="underline"></div>
             </div>
-            <div class="card">
-                <div class="icon">☀️</div>
-                <h3>Güneş Koruma</h3>
-                <p>Okyanus dostu filtrelerle geliştirilen koruyucu seri.</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Botanik Seri</h3>
+                    <p>Tamamen yerli bitki özlerinden üretilen onarıcı set.</p>
+                </div>
+                <div class="project-card">
+                    <div class="card-icon"><i class="fas fa-vial"></i></div>
+                    <h3>Yaşlanma Karşıtı</h3>
+                    <p>Hücre yenileyici peptide teknolojisi projemiz.</p>
+                </div>
             </div>
-            <div class="card">
-                <div class="icon">🍃</div>
-                <h3>Detoks Kiti</h3>
-                <p>Hava kirlili
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>İletişim</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Levent, İstanbul, Türkiye</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>destek@lumina.com</p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Adınız" required>
+                    <input type="email" placeholder="E-posta" required>
+                    <textarea placeholder="Mesajınız" rows="4" required></textarea>
