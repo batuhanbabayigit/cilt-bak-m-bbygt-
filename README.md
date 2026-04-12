@@ -1,4 +1,6 @@
-# web_portfolio_template
+# etkileşimli web tasarımı
+#cilt bakım ürünleri sitesi
+#batuhan BABAYİĞİT
 web projesi yönetimi dersi
 13 nisan için yapılacak görevler:
 birden fazla .html sayfanı oluştur
