@@ -19,7 +19,12 @@ const navSlide = () => {
         // Burger X Animasyonu
         burger.classList.toggle('toggle');
     });
+document.addEventListener("mousemove", (e) => {
+    const glow = document.querySelector(".glow");
 
+    glow.style.left = e.pageX + "px";
+    glow.style.top = e.pageY + "px";
+});
     // Menüden bir şeye tıklandığında menüyü kapat
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
