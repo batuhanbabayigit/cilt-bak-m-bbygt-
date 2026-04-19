@@ -1,128 +1,28 @@
-/* --- Değişkenler ve Temel Ayarlar --- */
-:root {
-    --primary: #a38a75;
-    --dark: #333;
-    --light: #f9f9f9;
-    --white: #fff;
-    --transition: all 0.4s ease;
+body { margin:0; font-family: Arial, sans-serif; }
+.navbar { background:#333; color:#fff; padding:10px; position:sticky; top:0; }
+.nav-links { list-style:none; display:flex; }
+.nav-links li { margin:0 10px; }
+.nav-links a { color:#fff; text-decoration:none; }
+.burger { display:none; cursor:pointer; }
+.burger div { width:25px; height:3px; background:#fff; margin:5px; }
+
+.hero { height:80vh; display:flex; justify-content:center; align-items:center;
+        background:url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1350&q=80') center/cover;
+        color:#fff; text-align:center; }
+.hero.alt-bg { background:url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1350&q=80') center/cover !important; }
+
+.section { padding:50px; text-align:center; }
+.project-card { background:#f9f9f9; margin:20px; padding:20px; border-radius:8px; cursor:pointer; transition:0.3s; }
+.project-card:hover { transform:scale(1.05); box-shadow:0 5px 15px rgba(0,0,0,0.2); }
+
+.btn { background:#a38a75; color:#fff; padding:10px 20px; border:none; cursor:pointer; border-radius:5px; }
+
+/* Responsive */
+@media(max-width:768px){
+  .nav-links { position:absolute; right:0; top:60px; flex-direction:column; background:#333; width:200px; transform:translateX(100%); transition:0.3s; }
+  .nav-links.nav-active { transform:translateX(0); }
+  .burger { display:block; }
 }
-
-* {
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-body { color: var(--dark); line-height: 1.6; }
-
-.container { max-width: 1100px; margin: auto; padding: 0 20px; }
-
-.section { padding: 80px 0; }
-
-.section-title { text-align: center; margin-bottom: 40px; }
-
-.section-title h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; }
-
-.underline { width: 60px; height: 3px; background: var(--primary); margin: 10px auto; }
-
-.bg-light { background: var(--light); }
-.project-card {
-    background: var(--white);
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-}
-
-/* --- Navigasyon --- */
-.navbar {
-    height: 80px; background: var(--white);
-    display: flex; align-items: center;
-    position: sticky; top: 0; z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-
-.logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 3px; color: var(--primary); }
-
-.nav-links { display: flex; list-style: none; }
-
-.nav-links li a {
-    text-decoration: none; color: var(--dark);
-    padding: 10px 20px; font-weight: 500; transition: var(--transition);
-}
-
-.nav-links li a:hover { color: var(--primary); }
-
-/* --- Hamburger Menü --- */
-.burger { display: none; cursor: pointer; }
-
-.burger div {
-    width: 25px; height: 3px; background-color: var(--dark);
-    margin: 5px; transition: var(--transition);
-}
-
-/* --- Hero Bölümü --- */
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1350&q=80');
-    background-size: cover; background-position: center;
-    display: flex; justify-content: center; align-items: center;
-    text-align: center; color: var(--white);
-}
-
-.hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 10px; }
-
-.btn-primary {
-    background: var(--primary); color: var(--white);
-    padding: 12px 30px; border-radius: 5px; text-decoration: none;
-    border: none; cursor: pointer; display: inline-block;
-}
-
-/* --- Proje Kartları --- */
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-
-.project-card {
-    background: var(--white); padding: 30px; text-align: center;
-    border-radius: 10px; transition: var(--transition);
-}
-
-.project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-.card-img { font-size: 3rem; margin-bottom: 15px; }
-
-/* --- İletişim --- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-
-.contact-form input, .contact-form textarea {
-    width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px;
-}
-
-/* --- Mobil Uyumluluk (Responsive) --- */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        position: absolute; right: 0; top: 80px; height: 92vh;
-        background: var(--white); width: 70%;
-        flex-direction: column; align-items: center; justify-content: center;
-        transform: translateX(100%); transition: transform 0.5s ease;
-    }
-    .nav-links li { margin: 20px 0; }
-    .burger { display: block; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 2.2rem; }
-}
-
-.nav-active { transform: translateX(0%); }
-
-/* X Animasyonu */
-.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
-.toggle .line2 { opacity: 0; }
-.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
+.toggle .line1 { transform:rotate(-45deg) translate(-5px,6px); }
+.toggle .line2 { opacity:0; }
+.toggle .line3 { transform:rotate(45deg) translate(-5px,-6px); }
