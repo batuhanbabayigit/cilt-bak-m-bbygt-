@@ -1,49 +1,20 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+// Hamburger menü aç/kapat
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
 
-    burger.addEventListener('click', () => {
-        // Menüyü Aç/Kapat
-        nav.classList.toggle('nav-active');
-
-        // Link Animasyonu
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
-        });
-
-        // Burger X Animasyonu
-        burger.classList.toggle('toggle');
-    });
-document.addEventListener("mousemove", (e) => {
-    const glow = document.querySelector(".glow");
-
-    glow.style.left = e.pageX + "px";
-    glow.style.top = e.pageY + "px";
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
-    // Menüden bir şeye tıklandığında menüyü kapat
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if(nav.classList.contains('nav-active')){
-                nav.classList.remove('nav-active');
-                burger.classList.remove('toggle');
-            }
-        });
-    });
-}
 
-// Form Gönderim Simülasyonu
-const contactForm = document.getElementById('contact-form');
-if(contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Mesajınız başarıyla iletildi! Teşekkür ederiz.');
-        contactForm.reset();
-    });
-}
+// Etkileşim 1: Arka plan rengini değiştir
+const colorBtn = document.getElementById('color-btn');
+colorBtn.addEventListener('click', () => {
+  document.body.style.backgroundColor =
+    document.body.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
+});
 
-navSlide();
+// Etkileşim 2: Alert mesajı
+const alertBtn = document.getElementById('alert-btn');
+alertBtn.addEventListener('click', () => {
+  alert('Mesajınız gönderildi!');
+});
