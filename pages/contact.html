@@ -1,116 +1,24 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim</title>
+<section id="contact">
+  <h2>İletişim</h2>
+  <p>Bize ulaşmak için aşağıdaki formu doldurabilirsiniz:</p>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+  <form id="contact-form">
+    <label for="name">Adınız:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-        header {
-            text-align: center;
-            padding: 40px;
-            background: #111827;
-        }
+    <label for="email">E-posta:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+    <label for="message">Mesajınız:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-            padding: 40px;
-        }
+    <button type="submit">Gönder</button>
+  </form>
 
-        form {
-            background: #1f2937;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 8px;
-            outline: none;
-            background: #111827;
-            color: white;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            background: cyan;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #00bcd4;
-        }
-
-        .info {
-            margin-top: 20px;
-            text-align: center;
-            color: #aaa;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #111827;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>İletişim</h1>
-    <p>Bize mesaj gönder</p>
-</header>
-
-<div class="container">
-
-    <form id="contact-form">
-        <label>Ad Soyad</label>
-        <input type="text" placeholder="Adınızı girin" required>
-
-        <label>E-posta</label>
-        <input type="email" placeholder="E-posta adresiniz" required>
-
-        <label>Mesaj</label>
-        <textarea rows="5" placeholder="Mesajınızı yazın..." required></textarea>
-
-        <button type="submit">Gönder</button>
-    </form>
-
-    <div class="info">
-        📧 info@example.com <br>
-        📍 Türkiye
-    </div>
-
-</div>
-
-<footer>
-    © 2026 - İletişim Sayfası
-</footer>
-
-</body>
-</html>
+  <p>Alternatif olarak bize şu kanallardan ulaşabilirsiniz:</p>
+  <ul>
+    <li>E-posta: info@ornek.com</li>
+    <li>Telefon: +90 555 123 45 67</li>
+    <li>Adres: Kırşehir, Türkiye</li>
+  </ul>
+</section>
