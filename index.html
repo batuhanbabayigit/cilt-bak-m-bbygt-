@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina | Doğal Bakım Rutininiz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim Web Sitem</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Ana Sayfa</a></li>
+      <li><a href="#about">Hakkında</a></li>
+      <li><a href="#project">Projeler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </nav>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">LUMINA</div>
-            
-            <ul class="nav-links">
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#about">Hakkımızda</a></li>
-                <li><a href="#projects">Ürünlerimiz</a></li>
-                <li><a href="#contact">İletişim</a></li>
-            </ul>
+  <!-- Ana Sayfa -->
+  <section id="home">
+    <h1>Hoş Geldiniz</h1>
+    <button id="color-btn">Arka Plan Rengini Değiştir</button>
+  </section>
 
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
+  <!-- About -->
+  <section id="about">
+    <h2>Hakkında</h2>
+    <p>Bu web sitesi, hamburger menü ve etkileşimli örneklerle temel web geliştirme mantığını göstermek için tasarlandı.</p>
+    <ul>
+      <li>HTML – Yapı</li>
+      <li>CSS – Stil</li>
+      <li>JavaScript – Etkileşim</li>
+    </ul>
+  </section>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Cildiniz İçin Saf Dokunuş</h1>
-            <p>Doğadan gelen mucizelerle ışıldayın.</p>
-            <a href="#projects" class="btn btn-primary">Koleksiyonu İncele</a>
-        </div>
-    </header>
+  <!-- Project -->
+  <section id="project">
+    <h2>Projeler</h2>
+    <div class="project-item">
+      <h3>Arduino LED Kontrol</h3>
+      <p>Buton ve LED kullanarak basit bir kontrol devresi geliştirdim.</p>
+    </div>
+    <div class="project-item">
+      <h3>Web Sitesi Tasarımı</h3>
+      <p>Hamburger menü ve etkileşimli butonlarla basit bir web sitesi tasarladım.</p>
+    </div>
+    <div class="project-item">
+      <h3>Mesafe Sensörü Uygulaması</h3>
+      <p>HC-SR04 sensörü ile mesafe ölçümü yaparak LED uyarı sistemi kurdum.</p>
+    </div>
+  </section>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-title">
-                <h2>Hikayemiz</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Lumina olarak, güzelliğin sadece dış görünüşte değil, sağlıklı bir cilt bariyerinde saklı olduğuna inanıyoruz. 2026 yılından beri, %100 vegan ve hayvanlar üzerinde deney yapılmayan içeriklerle sektörde fark yaratıyoruz.</p>
-                    <p>Her bir ürünümüz, uzman dermatologlar eşliğinde ve doğaya saygılı laboratuvarlarımızda geliştirilmektedir.</p>
-                </div>
-                <div
+  <!-- Contact -->
+  <section id="contact">
+    <h2>İletişim</h2>
+    <form id="contact-form">
+      <label for="name">Adınız:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">E-posta:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Mesajınız:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
