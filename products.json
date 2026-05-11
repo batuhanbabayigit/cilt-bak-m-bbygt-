@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Lumina Glow Serum",
+    "description": "C vitamini ve peptitlerle zenginleştirilmiş, ışıltı veren yeni nesil formül.",
+    "price": 449,
+    "tag": "Serum Ar-Ge",
+    "image": "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Deep Aqua Moisturizer",
+    "description": "Hiyalüronik asit projemizle 72 saat süren derinlemesine nemlendirme etkisi.",
+    "price": 329,
+    "tag": "Nem Kontrolü",
+    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Okyanus Dostu SPF 50",
+    "description": "Deniz ekosistemine zarar vermeyen, geniş spektrumlu koruyucu formülümüz.",
+    "price": 289,
+    "tag": "Güneş Koruma",
+    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Botanik Onarım Maskesi",
+    "description": "Tamamen yerli bitki özlerinden üretilen haftalık onarıcı yüz maskesi.",
+    "price": 199,
+    "tag": "Botanik Seri",
+    "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Peptide Eye Cream",
+    "description": "Göz çevresi için hücre yenileyici peptide teknolojisiyle formüle edildi.",
+    "price": 379,
+    "tag": "Yaşlanma Karşıtı",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Rose Glow Tonik",
+    "description": "Gül suyu bazlı, gözenekleri sıkılaştıran ve pH dengesini koruyan tonik.",
+    "price": 159,
+    "tag": "Günlük Bakım",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d52d?auto=format&fit=crop&w=500&q=80"
+  }
+]
