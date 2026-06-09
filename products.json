@@ -2,49 +2,49 @@
   {
     "id": 1,
     "name": "Lumina Glow Serum",
-    "description": "C vitamini ve peptitlerle zenginleştirilmiş, ışıltı veren yeni nesil formül.",
-    "price": 449,
-    "tag": "Serum Ar-Ge",
-    "image": "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=500&q=80"
+    "category": "Serum",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=500&q=80",
+    "description": "C vitamini ve peptitlerle zenginleştirilmiş ışıltı veren serum."
   },
   {
     "id": 2,
     "name": "Deep Aqua Moisturizer",
-    "description": "Hiyalüronik asit projemizle 72 saat süren derinlemesine nemlendirme etkisi.",
-    "price": 329,
-    "tag": "Nem Kontrolü",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80"
+    "category": "Nemlendirici",
+    "price": 289,
+    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80",
+    "description": "72 saat etkili yoğun nemlendirme."
   },
   {
     "id": 3,
-    "name": "Okyanus Dostu SPF 50",
-    "description": "Deniz ekosistemine zarar vermeyen, geniş spektrumlu koruyucu formülümüz.",
-    "price": 289,
-    "tag": "Güneş Koruma",
-    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80"
+    "name": "SPF 50 Güneş Koruyucu",
+    "category": "Güneş Koruma",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+    "description": "Geniş spektrumlu SPF 50 koruma."
   },
   {
     "id": 4,
-    "name": "Botanik Onarım Maskesi",
-    "description": "Tamamen yerli bitki özlerinden üretilen haftalık onarıcı yüz maskesi.",
-    "price": 199,
-    "tag": "Botanik Seri",
-    "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=500&q=80"
+    "name": "Botanik Yüz Yağı",
+    "category": "Bakım",
+    "price": 415,
+    "image": "https://images.unsplash.com/photo-1570194065650-d99fb4ee6d05?auto=format&fit=crop&w=500&q=80",
+    "description": "Bitki özleri ile cilt yenileyici bakım yağı."
   },
   {
     "id": 5,
-    "name": "Peptide Eye Cream",
-    "description": "Göz çevresi için hücre yenileyici peptide teknolojisiyle formüle edildi.",
-    "price": 379,
-    "tag": "Yaşlanma Karşıtı",
-    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80"
+    "name": "Retinol Gece Serumu",
+    "category": "Serum",
+    "price": 520,
+    "image": "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=500&q=80",
+    "description": "Yaşlanma karşıtı retinol teknolojisi."
   },
   {
     "id": 6,
-    "name": "Rose Glow Tonik",
-    "description": "Gül suyu bazlı, gözenekleri sıkılaştıran ve pH dengesini koruyan tonik.",
-    "price": 159,
-    "tag": "Günlük Bakım",
-    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d52d?auto=format&fit=crop&w=500&q=80"
+    "name": "Niasinamid Toner",
+    "category": "Bakım",
+    "price": 165,
+    "image": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=500&q=80",
+    "description": "Gözenek sıkılaştırıcı niasinamid formülü."
   }
 ]
